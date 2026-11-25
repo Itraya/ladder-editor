@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "rungs": [
+    {
+      "comment": "Auto-maintien : marche / arrêt",
+      "rows": 6,
+      "cells": [
+        { "r": 0, "c": 0, "t": "no", "n": "Start" },
+        { "r": 1, "c": 0, "t": "no", "n": "Run" },
+        { "r": 0, "c": 1, "t": "nc", "n": "Stop" },
+        { "r": 0, "c": 2, "t": "wire" }, { "r": 0, "c": 3, "t": "wire" }, { "r": 0, "c": 4, "t": "wire" },
+        { "r": 0, "c": 5, "t": "wire" }, { "r": 0, "c": 6, "t": "wire" }, { "r": 0, "c": 7, "t": "wire" },
+        { "r": 0, "c": 8, "t": "wire" }, { "r": 0, "c": 9, "t": "wire" },
+        { "r": 0, "c": 10, "t": "coil", "n": "Run" }
+      ],
+      "links": [{ "r": 0, "c": 0 }]
+    },
+    {
+      "comment": "Câble parallèle : NF A en série avec (B OU C)",
+      "rows": 6,
+      "cells": [
+        { "r": 0, "c": 0, "t": "nc", "n": "A" },
+        { "r": 0, "c": 1, "t": "no", "n": "B" },
+        { "r": 1, "c": 1, "t": "no", "n": "C" },
+        { "r": 0, "c": 2, "t": "wire" }, { "r": 0, "c": 3, "t": "wire" }, { "r": 0, "c": 4, "t": "wire" },
+        { "r": 0, "c": 5, "t": "wire" }, { "r": 0, "c": 6, "t": "wire" }, { "r": 0, "c": 7, "t": "wire" },
+        { "r": 0, "c": 8, "t": "wire" }, { "r": 0, "c": 9, "t": "wire" },
+        { "r": 0, "c": 10, "t": "coil", "n": "Sortie2" }
+      ],
+      "links": [{ "r": 0, "c": 0 }, { "r": 0, "c": 1 }]
+    },
+    {
+      "comment": "(D OU NON E) ET NF F",
+      "rows": 6,
+      "cells": [
+        { "r": 0, "c": 0, "t": "no", "n": "D" },
+        { "r": 1, "c": 0, "t": "nc", "n": "E" },
+        { "r": 0, "c": 1, "t": "nc", "n": "F" },
+        { "r": 0, "c": 2, "t": "wire" }, { "r": 0, "c": 3, "t": "wire" }, { "r": 0, "c": 4, "t": "wire" },
+        { "r": 0, "c": 5, "t": "wire" }, { "r": 0, "c": 6, "t": "wire" }, { "r": 0, "c": 7, "t": "wire" },
+        { "r": 0, "c": 8, "t": "wire" }, { "r": 0, "c": 9, "t": "wire" },
+        { "r": 0, "c": 10, "t": "coil", "n": "Sortie3" }
+      ],
+      "links": [{ "r": 0, "c": 0 }]
+    }
+  ]
+}

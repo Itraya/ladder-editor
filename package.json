@@ -1,0 +1,25 @@
+{
+  "name": "ladder-editor",
+  "displayName": "Ladder Editor (style Control Expert)",
+  "description": "Éditeur graphique de ladder (LD) en grille, inspiré de Control Expert, avec export en Structured Text.",
+  "version": "0.1.0",
+  "publisher": "local",
+  "license": "MIT",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Programming Languages", "Other"],
+  "main": "./extension.js",
+  "contributes": {
+    "customEditors": [
+      {
+        "viewType": "ladderEditor.editor",
+        "displayName": "Ladder Editor",
+        "selector": [{ "filenamePattern": "*.ladder.json" }],
+        "priority": "default"
+      }
+    ],
+    "commands": [
+      { "command": "ladderEditor.new", "title": "Ladder: Nouveau fichier ladder" },
+      { "command": "ladderEditor.exportST", "title": "Ladder: Exporter en Structured Text" }
+    ]
+  }
+}
